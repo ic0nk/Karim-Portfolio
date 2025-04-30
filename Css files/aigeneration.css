@@ -1,0 +1,297 @@
+body {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('/img/image 27.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.linesection::before {
+  content: '';
+  position: absolute;
+  top: 33px;
+  left: -70px;
+  width: 5px;
+  height:39.9%;
+  background-color: var(--color1);
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid var(--text-primary);
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.line-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  width: 68px;
+  height: 5px;
+  background-color: var(--color1);
+  border-radius: 5px;
+  z-index: -2;
+}
+
+.lineproject::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -75px;
+  width: 73px;
+  height: 5px;
+  background-color: var(--color1);
+  border-radius: 5px;
+  z-index: -2;
+}
+
+.lineproject1::before {
+  content: '';
+  position: absolute;
+  top: 36%;
+  right: -142px;
+  width: 140px;
+  height: 5px;
+  background-color: var(--color1);
+  border-radius: 5px;
+  z-index: -2;
+}
+
+/* Card Styles */
+.card, 
+.lo-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover, 
+.lo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px	rgb(0, 128, 128, 0.5);
+  background-image: linear-gradient(to right, var(--color1), var(--color));
+  z-index: 2;
+}
+
+.card h2,
+.lo-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card p,
+.lo-card p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.icon-small {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid var(--text-primary);
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Man-made card style */
+.man-outline {
+  border: 2px solid var(--text-primary);
+  background-color: transparent;
+}
+
+/* Grid Layouts */
+.lo-grid, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+  .columns {
+    gap: 80px; /* Reduce gap for slightly smaller screens */
+  }
+}
+
+@media (max-width: 960px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 40px; /* Further reduce gap when stacked */
+  }
+  
+  /* Hide decorative lines on smaller screens */
+  .linesection::before,
+  .line-title::before,
+  .lineproject::before,
+  .lineproject1::before {
+    display: none;
+  }
+
+  .lo-grid, .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .lo-grid, .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px; /* Adjust padding for very small screens */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section {
+    height: 70vh; /* Reduce hero height on small screens */
+  }
+  
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    width: 100%;
+    text-align: center;
+    display: block; /* Make title block level */
+    box-sizing: border-box;
+  }
+  
+  .card, 
+  .lo-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Add support for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121212;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --card-bg: #1e1e1e;
+    --card-border: #333333;
+  }
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+  .hero-section {
+    height: -webkit-fill-available;
+  }
+}
