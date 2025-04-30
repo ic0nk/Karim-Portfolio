@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* main colors */
+    --background-color: #050B0D;
+    --font: #F0F2F2;
+    --text: #A1A5A6;
+    --color: #0D2626;
+    --color0: #5F7373;
+    --color1: #008080;
+    /* branding ux ai */
+    --primary-navy: #1A2238;
+    --primary-gold: #FFC107;
+    --accent-teal: #26A69A;
+    --light-gray: #F5F5F5;
+    --dark-charcoal: #333333;
+    --white: #FFFFFF;
+    --primary-blue: #1E88E5;
+    --secondary-blue: #64B5F6;
+    --accent-blue: #0D47A1;
+    --neutral-light: #F5F8FA;
+    --neutral-dark: #37474F;
+    --success-green: #4CAF50;
+    --alert-orange: #FF9800;
+    --error-red: #F44336;
+    --card-bg: #111111;
+    --card-border: #222222;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent: #008080;
+    --line-color: rgba(0, 128, 128, 0.4);
+    --section-padding: 4rem 0;
+    --container-padding: 0 2rem;
+    /* leadership */
+    --primary-color: #050B0D;
+    --secondary-color: #0D2626;
+    --accent-color: #3caea3;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --text-color: #F0F2F2;
+    --background-colorr: #050B0D;
+    --section-padding: 5rem 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Ubuntu", serif;
+}

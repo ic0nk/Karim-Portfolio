@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Css files/create-that-UX.css">
+        <link rel="stylesheet" href="/Css files/Colors.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <title>Project - Create That UX</title>
+        <link rel="shortcut icon" href="img/code.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="/Javascript files/components/header.js"></script>
+        <script src="/Javascript files/components/footer.js"></script>
+    </head>
+<body>
+    <!-- Header -->
+    <header-component></header-component>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="hero-badge">UX Design Project</span>
+            <h1>Picoo Custom Quiz Feature</h1>
+            <p>Empowering teachers to create engaging, interactive outdoor learning experiences through customizable quiz content</p>
+            <a href="#overview" class="btn">Explore the Design</a>
+            <div class="scroll-indicator">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Overview -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-image">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Children playing outdoors with Picoo devices">
+                </div>
+                <div class="overview-content">
+                    <p>Picoo is an innovative company that combines technology with outdoor games for children, creating screen-free interactive experiences that are used in elementary schools. This UX design project focuses on developing a custom quiz creation feature that allows teachers to create their own quiz content tailored to their curriculum needs.</p>
+                    
+                    <dl class="overview-details">
+                        <dt>Client:</dt>
+                        <dd>Picoo</dd>
+                        
+                        <dt>Target Users:</dt>
+                        <dd>Primary school teachers</dd>
+                        
+                        <dt>Platform:</dt>
+                        <dd>Desktop (primary) with mobile companion</dd>
+                        
+                        <dt>Timeline:</dt>
+                        <dd>March - April 2025</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Challenge & Solution -->
+    <section id="challenge" class="challenge">
+        <div class="container">
+            <h2>Challenge & Solution</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15.5C14.21 15.5 16 13.71 16 11.5V6C16 3.79 14.21 2 12 2C9.79 2 8 3.79 8 6V11.5C8 13.71 9.79 15.5 12 15.5Z" fill="#1E88E5"/>
+                            <path d="M19 11.5C19 11.5 19 11.5 19 11.5C19 15.64 15.64 19 11.5 19C7.36 19 4 15.64 4 11.5C4 11.5 4 11.5 4 11.5H2C2 16.75 6.25 21 11.5 21C16.75 21 21 16.75 21 11.5H19Z" fill="#1E88E5"/>
+                        </svg>
+                        The Challenge
+                    </h3>
+                    <p>Currently, teachers using Picoo can only choose from pre-made questions provided by the company. They lack the ability to create custom questions that align with their specific curriculum or classroom needs. Additionally, the timer settings are fixed, which can be problematic for different playground sizes and student abilities.</p>
+                    
+                    <p>Key issues identified through research:</p>
+                    <ul class="goals-list">
+                        <li>Limited question customization options</li>
+                        <li>Fixed timer settings that don't accommodate different needs</li>
+                        <li>No desktop interface for efficient content creation</li>
+                        <li>Lack of accessibility options for students with different abilities</li>
+                    </ul>
+                </div>
+                
+                <div class="challenge-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L4 5V11.09C4 16.14 7.41 20.85 12 22C16.59 20.85 20 16.14 20 11.09V5L12 2Z" fill="#1E88E5"/>
+                        </svg>
+                        Our Solution
+                    </h3>
+                    <p>We designed a comprehensive custom quiz creation feature that empowers teachers to create, manage, and deploy their own educational content through the Picoo system. The solution prioritizes desktop usage for content creation while maintaining mobile compatibility for on-the-go adjustments.</p>
+                    
+                    <p>Key solution components:</p>
+                    <ul class="goals-list">
+                        <li>Intuitive desktop interface for quiz creation and management</li>
+                        <li>Customizable timer settings for individual questions or entire quizzes</li>
+                        <li>Mobile companion app for quick adjustments and deployment</li>
+                        <li>Accessibility options for students with different learning needs</li>
+                        <li>Seamless integration with existing Picoo devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+                <button class="tab-btn" data-tab="creator">Quiz Creator</button>
+                <button class="tab-btn" data-tab="timer">Timer Settings</button>
+                <button class="tab-btn" data-tab="deployment">Deployment</button>
+                <button class="tab-btn" data-tab="mobile">Mobile View</button>
+            </div>
+            
+            <!-- Dashboard Tab -->
+            <div class="tab-content active" id="dashboard">
+                <div class="feature-grid">
+                    <div>
+                        <h3>Teacher Dashboard</h3>
+                        <p>The dashboard provides a comprehensive overview of all created quizzes with intuitive management tools. Teachers can quickly access their quiz library, create new content, and monitor usage statistics.</p>
+                        
+                        <h4>Key Elements:</h4>
+                        <ul>
+                            <li>Quiz library with search and filter options</li>
+                            <li>Quick-access buttons for common actions</li>
+                            <li>Recent activity and usage statistics</li>
+                            <li>Template library for faster quiz creation</li>
+                            <li>System notifications and updates</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Teacher Dashboard">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quiz Creator Tab -->
+            <div class="tab-content" id="creator">
+                <div class="feature-grid">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Quiz Creator Interface">
+                    </div>
+                    
+                    <div>
+                        <h3>Quiz Creator Interface</h3>
+                        <p>The quiz creator provides a user-friendly interface for building custom educational content. Teachers can create various question types, add media, and preview content as they build.</p>
+                        
+                        <h4>Key Elements:</h4>
+                        <ul>
+                            <li>Multiple question type options (multiple choice, true/false, open-ended)</li>
+                            <li>Rich text editor with formatting options</li>
+                            <li>Media upload capability for images</li>
+                            <li>Real-time preview of questions</li>
+                            <li>Drag-and-drop question reordering</li>
+                            <li>Auto-save functionality to prevent data loss</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timer Settings Tab -->
+            <div class="tab-content" id="timer">
+                <div class="feature-grid">
+                    <div>
+                        <h3>Customizable Timer Settings</h3>
+                        <p>Addressing a key pain point identified in user research, the timer settings feature allows teachers to customize time limits based on playground size, student abilities, and question complexity.</p>
+                        
+                        <h4>Key Elements:</h4>
+                        <ul>
+                            <li>Global timer settings for the entire quiz</li>
+                            <li>Individual question time adjustments</li>
+                            <li>Preset options for different playground sizes</li>
+                            <li>Accessibility mode with extended timers</li>
+                            <li>Visual timer preview</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Timer Settings Interface">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deployment Tab -->
+            <div class="tab-content" id="deployment">
+                <div class="feature-grid">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Quiz Deployment Interface">
+                    </div>
+                    
+                    <div>
+                        <h3>Quiz Deployment</h3>
+                        <p>The deployment interface provides a seamless connection between the quiz creation platform and the physical Picoo devices, allowing teachers to easily transfer content to devices and monitor active sessions.</p>
+                        
+                        <h4>Key Elements:</h4>
+                        <ul>
+                            <li>Device discovery and connection management</li>
+                            <li>Visual confirmation of successful transfers</li>
+                            <li>Remote session control (start, pause, end)</li>
+                            <li>Real-time status monitoring</li>
+                            <li>Quick quiz selection from library</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile View Tab -->
+            <div class="tab-content" id="mobile">
+                <div class="feature-grid">
+                    <div>
+                        <h3>Mobile Companion View</h3>
+                        <p>While the desktop interface is optimized for content creation, the mobile companion provides essential functionality for on-the-go management and deployment of quizzes.</p>
+                        
+                        <h4>Key Elements:</h4>
+                        <ul>
+                            <li>Simplified quiz library access</li>
+                            <li>Basic editing capabilities for existing quizzes</li>
+                            <li>Device connection and quiz deployment</li>
+                            <li>Session monitoring and control</li>
+                            <li>Push notifications for quiz completion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mobile Interface">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- User Research -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2>User Research Insights</h2>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Teacher Interviews</h3>
+                    <p>We conducted interviews with primary school teachers to understand their needs and pain points with the current Picoo system. Key findings included frustration with the fixed timer settings and a strong preference for desktop-based quiz creation.</p>
+                    
+                    <div class="tag-list">
+                        <span class="tag">Timer flexibility</span>
+                        <span class="tag">Desktop preference</span>
+                        <span class="tag">Curriculum alignment</span>
+                        <span class="tag">Accessibility concerns</span>
+                    </div>
+                </div>
+                
+                <div class="research-card">
+                    <h3>Competitor Analysis</h3>
+                    <p>We analyzed similar educational platforms like Kahoot, Quizlet, and Google Forms to identify best practices and opportunities for differentiation. Picoo's unique advantage is its focus on physical activity combined with learning.</p>
+                    
+                    <div class="tag-list">
+                        <span class="tag">Kahoot</span>
+                        <span class="tag">Quizlet</span>
+                        <span class="tag">Google Forms</span>
+                        <span class="tag">Socrative</span>
+                    </div>
+                </div>
+                
+                <div class="research-card">
+                    <h3>Usability Testing</h3>
+                    <p>Early prototypes were tested with teachers to validate our design direction. Feedback confirmed the importance of a desktop interface and highlighted the need for simplified deployment processes.</p>
+                    
+                    <div class="tag-list">
+                        <span class="tag">Intuitive navigation</span>
+                        <span class="tag">Clear workflows</span>
+                        <span class="tag">Visual feedback</span>
+                        <span class="tag">Error prevention</span>
+                    </div>
+                </div>
+                
+                <div class="research-card">
+                    <h3>Key User Needs</h3>
+                    <p>Our research identified several critical user needs that informed our design decisions, ensuring the solution would effectively address teachers' pain points and enhance the educational experience.</p>
+                    
+                    <div class="tag-list">
+                        <span class="tag">Efficiency</span>
+                        <span class="tag">Customization</span>
+                        <span class="tag">Reliability</span>
+                        <span class="tag">Simplicity</span>
+                        <span class="tag">Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Design System -->
+    <section id="design" class="design-system">
+        <div class="container">
+            <h2>Design System</h2>
+            
+            <p>We developed a comprehensive design system to ensure consistency across all interfaces while maintaining alignment with Picoo's existing brand identity. The system emphasizes clarity, accessibility, and a friendly, educational aesthetic.</p>
+            
+            <h3>Color Palette</h3>
+            <div class="color-palette">
+                <div class="color-swatch color-primary">#1E88E5<br>Primary Blue</div>
+                <div class="color-swatch color-secondary">#64B5F6<br>Secondary Blue</div>
+                <div class="color-swatch color-accent">#0D47A1<br>Accent Blue</div>
+                <div class="color-swatch color-light">#F5F8FA<br>Neutral Light</div>
+                <div class="color-swatch color-dark">#37474F<br>Neutral Dark</div>
+                <div class="color-swatch color-success">#4CAF50<br>Success Green</div>
+                <div class="color-swatch color-alert">#FF9800<br>Alert Orange</div>
+                <div class="color-swatch color-error">#F44336<br>Error Red</div>
+            </div>
+            
+            <h3>Typography System</h3>
+            <div class="typography-sample">
+                <div class="font-heading">
+                    <h1>Heading Level 1 (24px Bold)</h1>
+                    <h2>Heading Level 2 (20px Bold)</h2>
+                    <h3>Heading Level 3 (18px Bold)</h3>
+                    <h4>Heading Level 4 (16px Bold)</h4>
+                </div>
+                
+                <div class="font-body">
+                    <p>Body text uses Open Sans at 16px for optimal readability across devices. The clean, professional appearance ensures content is easy to read even in complex interfaces with multiple elements.</p>
+                    <p>Secondary text may use a slightly smaller size (14px) for less important information, while maintaining the same font family for consistency.</p>
+                </div>
+                
+                <div>
+                    <button class="btn">Primary Button</button>
+                    <button class="btn btn-outline">Secondary Button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Components -->
+    <section class="components">
+        <div class="container">
+            <h2>UI Components</h2>
+            
+            <p>We designed a comprehensive set of UI components that work together to create a cohesive, intuitive interface. Each component was carefully crafted to support the specific needs of teachers creating educational content.</p>
+            
+            <div class="component-grid">
+                <div class="component-card">
+                    <div class="component-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Form Elements">
+                    </div>
+                    <div class="component-content">
+                        <h4>Form Elements</h4>
+                        <p>Input fields, dropdowns, and form controls designed for efficient data entry and configuration.</p>
+                    </div>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-image">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Navigation Elements">
+                    </div>
+                    <div class="component-content">
+                        <h4>Navigation Elements</h4>
+                        <p>Tabs, breadcrumbs, and menus that provide clear wayfinding throughout the interface.</p>
+                    </div>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Content Cards">
+                    </div>
+                    <div class="component-content">
+                        <h4>Content Cards</h4>
+                        <p>Flexible containers for displaying quiz content, statistics, and library items.</p>
+                    </div>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Data Tables">
+                    </div>
+                    <div class="component-content">
+                        <h4>Data Tables</h4>
+                        <p>Structured displays for quiz libraries, student results, and system information.</p>
+                    </div>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Feedback Elements">
+                    </div>
+                    <div class="component-content">
+                        <h4>Feedback Elements</h4>
+                        <p>Notifications, alerts, and confirmation messages that provide clear system status.</p>
+                    </div>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-image">
+                        <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Question Editor">
+                    </div>
+                    <div class="component-content">
+                        <h4>Question Editor</h4>
+                        <p>Specialized interface for creating and formatting different question types.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- User Flows -->
+    <section class="flows">
+        <div class="container">
+            <h2>User Flows</h2>
+            
+            <div class="flow-card">
+                <h3>Creating a Custom Quiz</h3>
+                <ol class="flow-steps">
+                    <li>Teacher logs into desktop dashboard</li>
+                    <li>Clicks "Create New Quiz" button</li>
+                    <li>Enters quiz title, subject, and grade level</li>
+                    <li>Adds questions one by one, setting type and content</li>
+                    <li>Customizes timer settings for each question or globally</li>
+                    <li>Previews the entire quiz</li>
+                    <li>Saves quiz to library</li>
+                    <li>Syncs quiz to Picoo devices when ready to use</li>
+                </ol>
+            </div>
+            
+            <div class="flow-card">
+                <h3>Modifying Timer Settings</h3>
+                <ol class="flow-steps">
+                    <li>Teacher selects existing quiz from library</li>
+                    <li>Clicks "Edit" button</li>
+                    <li>Navigates to timer settings section</li>
+                    <li>Adjusts global timer or individual question timers</li>
+                    <li>Saves changes</li>
+                    <li>Option to sync updated quiz to devices</li>
+                </ol>
+            </div>
+            
+            <div class="flow-card">
+                <h3>Deploying Quiz to Devices</h3>
+                <ol class="flow-steps">
+                    <li>Teacher selects quiz from library</li>
+                    <li>Clicks "Deploy to Devices" button</li>
+                    <li>Sees list of available Picoo devices</li>
+                    <li>Selects target devices</li>
+                    <li>Confirms deployment</li>
+                    <li>Receives confirmation when quiz is ready on devices</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Responsive Design -->
+    <section class="responsive">
+        <div class="container">
+            <h2>Responsive Design</h2>
+            
+            <p>While our research indicated a strong preference for desktop-based quiz creation, we ensured the system would be accessible across different devices to support teachers in various contexts.</p>
+            
+            <div class="device-mockups">
+                <div class="device">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Desktop View">
+                    <h4>Desktop</h4>
+                    <p>Full-featured interface with multi-panel layout</p>
+                </div>
+                
+                <div class="device">
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tablet View">
+                    <h4>Tablet</h4>
+                    <p>Adapted layout with collapsible sidebar</p>
+                </div>
+                
+                <div class="device">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mobile View">
+                    <h4>Mobile</h4>
+                    <p>Essential functions focused on deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Next Steps -->
+    <section class="next-steps">
+        <div class="container">
+            <h2>Next Steps & Future Considerations</h2>
+            
+            <div class="next-grid">
+                <div class="next-card">
+                    <h3>User Testing & Validation</h3>
+                    <p>Conduct comprehensive usability testing with teachers to validate the design and identify any remaining pain points or opportunities for improvement.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="next-card">
+                    <h3>Template Library</h3>
+                    <p>Develop a library of pre-made quiz templates for common subjects and educational standards to help teachers get started quickly.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="next-card">
+                    <h3>Collaboration Features</h3>
+                    <p>Explore options for teacher collaboration, allowing educators to share and remix quiz content within their school or district.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="next-card">
+                    <h3>Advanced Analytics</h3>
+                    <p>Develop more sophisticated analytics to help teachers track student performance and identify areas for additional instruction.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+    <script src="/Javascript files/UX.js"></script>
+</body>
+</html>

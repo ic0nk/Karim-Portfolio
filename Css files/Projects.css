@@ -1,0 +1,302 @@
+body {
+    height: 100vh;
+}
+/* header section */
+header-component header {
+    position: static !important;
+}
+
+/*Learning-Outcomes-section*/
+.Learning-Outcomes-section h2, .templates-section h2 {
+    color: var(--color1);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.templates-section {
+    padding-top: 40px;
+}
+
+.Projects-section {
+    padding-top: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+    .card, .card0 {
+        width: 350px;
+        height: 430px;
+        background-color: var(--font);
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .card0 {
+        background-color: var(--text);
+    }
+
+    @property --angle{
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    
+    .card::after, .card::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: conic-gradient(from var(--angle), transparent 90%, var(--color1));
+        z-index: -1;
+        padding: 3px;
+        border-radius: 20px;
+        animation: 3s spin linear infinite;
+    }
+
+    .card0::after, .card0::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: conic-gradient(from var(--angle), transparent 90%, var(--color0));
+        z-index: -1;
+        padding: 3px;
+        border-radius: 20px;
+        animation: 3s spin linear infinite;
+    }
+
+    .card::before, .card0::before{
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+
+    .mysildes {
+        display: none;
+    }
+
+    .card img, .card0 img {
+        vertical-align: middle;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .slideshow-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: var(--font);
+        font-weight: bold;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .next:hover {
+        transform: translateX(5px);
+        color: var(--color1);
+        scale: 1.2;
+    }
+
+    .prev:hover {
+        transform: translateX(-5px);
+        scale: 1.2;
+        color: var(--color1);
+    }
+
+    .main-dot {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 8px;
+        width: 8px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        0% {
+            opacity: 0.4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0.4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .contact {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .contact .btn {
+        color: var(--background-color);
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        float: right;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .contact .btn a i {
+        text-align: center;
+        color: var(--font);
+        margin: 0 0;
+    }
+
+    .contact a {
+        position: relative;
+    }
+
+    .contact a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--color1);
+        transition: 0.15s ease-in-out;
+    }
+
+    .contact a:hover::after {
+        width: 100%;
+    }
+
+    .contact .btn:hover {
+        background-color: transparent;
+        color: var(--color1);
+        transform: translateX(5px);
+    }
+
+    .contact p {
+        width: 300px;
+        height: 120px;
+        color: var(--background-color);
+    }
+
+    .contact h3 {
+        color: var(--color1);
+        text-transform: uppercase;
+    }
+
+    .templates-section {
+        padding-bottom: 50px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        gap: 8px;
+        bottom: 50px;
+        padding: 10px;
+        padding-left: 20px;
+        z-index: 100;
+        background-color: #f0f2f23d;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .social-media a i {
+        font-size: 25px;
+        color: var(--text);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .social-media a i:hover {
+        color: var(--color1);
+        transform: translateX(5px);
+        scale: 1.3;
+    }
+
+    
+/*Responsive design*/
+@media (max-width: 750px) {
+    header-component header {
+        position: fixed !important;
+    }
+    .main{
+        flex-direction: column;
+        gap: 50px 0;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1266px) {
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 25px;
+        row-gap: 50px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card4 {
+        display: block;
+        width: 350px;
+    }
+
+}
